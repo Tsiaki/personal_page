@@ -1,0 +1,80 @@
+.gradient-background {
+  background: linear-gradient(300deg, #BDCDD6, #6096B4,#6096B4);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body{
+  font-family: 'PT Sans', sans-serif;
+}
+h1,h2,h3,h4{
+  font-family: 'Libre Baskerville', serif;
+}
+.title-photo{
+  padding: 20px;
+  max-height: 100%;
+  max-width: 100%; 
+}
+.top-pad{
+  padding: 20px;
+  height: 60vh;
+  
+}
+
+.text-contain{
+  position: absolute;
+  top: 150px; left: 50%;
+  background-color: black;
+  opacity: 70%;
+  color: #BDCDD6;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  
+ 
+}
+@media (max-width:600px) {
+  .text-contain{
+    position: relative;
+    top: 0;left: 0;
+    background-color: black;
+    opacity: 70%;
+    color: wheat;
+    padding: 10px;
+    border-radius: 20px;
+   
+  }
+}
+
+#features{
+  background-color: #93BFCF;
+}
+#testimonial{
+  background-color: #BDCDD6;
+}
+#foot{
+  background-color: #EEE9DA;
+  
+}
+.my-4{
+  margin-top: 0!important;
+  margin-bottom: 0!important;
+}
+.bton{
+  background-color:#6096B4 ;
+  color: #BDCDD6;
+  border: 0;
+}
