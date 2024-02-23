@@ -7,17 +7,18 @@ var started = false;
 var level = 0;
 
 //$("body").click(function(){nextSequence()});
-$( "body" ).on( "keyup", function() {
-    if (!started) {
-    $("#level-title").text("level "+level);
-    nextSequence();
-    started = true;
-    }
-  } );
-
+$( "body" ).on( "keyup", startGame);
+$("h1").on("click", startGame);
 $(".btn").on("click", onClickDo);
 
-   
+  
+function startGame() {
+  if (!started) {
+  $("#level-title").text("level "+level);
+  nextSequence();
+  started = true;
+  }
+}
 
 
 function onClickDo (){
@@ -72,7 +73,7 @@ function checkAnswer(currentLevel) {
         $("body").removeClass("game-over");
       }, 200);
 
-      $("#level-title").text("Game Over, Press Any Key to Restart");
+      $("#level-title").text("Game Over, Press Any Key or click here to Restart");
       startOver();
 
     }
