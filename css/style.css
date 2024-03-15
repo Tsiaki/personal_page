@@ -1,8 +1,12 @@
 .gradient-background {
-  background: linear-gradient(300deg, #BDCDD6, #6096B4,#6096B4);
+  background: linear-gradient(300deg, #745024, #EEF0E5,#B89568);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
-  
+}
+.gradient-background-2 {
+  background: linear-gradient(300deg, #B89568, #EEF0E5,#745024);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
 }
 
 @keyframes gradient-animation {
@@ -15,6 +19,11 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+.background1{
+  background-image: url("../images/back_4.jpg"); 
+  background-size:cover;
 }
 
 body{
@@ -33,13 +42,22 @@ h1,h2,h3,h4{
   height: 60vh;
   
 }
+.portrait{
+  border-radius: 45%;
+  text-align: center;
+}
+.text-2{
+  text-align: center;
+  
+}
 
 .text-contain{
+  text-align: center;
   position: absolute;
-  top: 150px; left: 50%;
-  background-color: black;
-  opacity: 70%;
-  color: #BDCDD6;
+  top: 20px; 
+  background-color: rgba(248,213,170, 0.5);
+  /*opacity: 50%;*/
+  color: #163020;
   padding: 10px;
   margin: 10px;
   border-radius: 20px;
@@ -50,26 +68,22 @@ h1,h2,h3,h4{
   .text-contain{
     position: relative;
     top: 0;left: 0;
-    background-color: black;
-    opacity: 70%;
-    color: wheat;
-    padding: 10px;
-    border-radius: 20px;
+    
    
   }
 }
 
 #features{
-  background-color: #93BFCF;
+  /*background-color: #93BFCF;*/
 }
 #testimonial{
-  background-color: #BDCDD6;
+  background-color: #304D30;
 }
 #foot{
-  background-color: #EEE9DA;
+  background-color: #EEF0E5;
 }
 #contact{
-  background-color: #93BFCF;
+  background-color:#B89568;
 }
 .my-4{
   margin-top: 0!important;
@@ -80,7 +94,12 @@ h1,h2,h3,h4{
   margin-bottom: 0!important;
 }
 .bton{
-  background-color:#6096B4 ;
-  color: #BDCDD6;
-  border: 0;
+  background-color:#102C57;
+  color: whitesmoke;
+  border: solid;
+  
+}
+.bton:hover{
+  background-color:#F6995C;
+  border-color: whitesmoke;
 }
